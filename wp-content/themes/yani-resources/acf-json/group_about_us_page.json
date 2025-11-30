@@ -1,0 +1,369 @@
+{
+    "key": "group_about_us_page",
+    "title": "About Us Page Content",
+    "fields": [
+        {
+            "key": "field_tab_about_hero",
+            "label": "Hero Section",
+            "name": "",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_about_hero_image",
+            "label": "Hero Image",
+            "name": "about_hero_image",
+            "type": "image",
+            "return_format": "url",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_about_hero_headline",
+            "label": "Hero Headline",
+            "name": "about_hero_headline",
+            "type": "text",
+            "default_value": "Community.<br>Purpose.<br>Progress."
+        },
+        {
+            "key": "field_tab_about_intro",
+            "label": "Intro Section",
+            "name": "",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_about_intro_text_1",
+            "label": "Intro Text (Left)",
+            "name": "about_intro_text_1",
+            "type": "textarea",
+            "default_value": "Welcome to Yani Resources. Delivering specialised electrical and labour hire services, we are powered by integrity, community, and skilled delivery."
+        },
+        {
+            "key": "field_about_intro_text_2",
+            "label": "Intro Text (Right)",
+            "name": "about_intro_text_2",
+            "type": "textarea",
+            "default_value": "Proudly Aboriginal-owned, we provide high-quality services across construction, mining, government and infrastructure sectors, combining industry expertise with cultural respect."
+        },
+        {
+            "key": "field_tab_about_leadership",
+            "label": "Leadership Section",
+            "name": "",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_about_leadership_title",
+            "label": "Leadership Team Title",
+            "name": "about_leadership_title",
+            "type": "text",
+            "default_value": "Yani Resources Leadership Team"
+        },
+        {
+            "key": "field_group_leadership_left",
+            "label": "Left Leadership Member",
+            "name": "about_leadership_left",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_about_leadership_left_image",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "return_format": "url",
+                    "preview_size": "medium"
+                },
+                {
+                    "key": "field_about_leadership_left_name",
+                    "label": "Full Name",
+                    "name": "name",
+                    "type": "text",
+                    "default_value": "Nathan Wilson"
+                },
+                {
+                    "key": "field_about_leadership_left_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "default_value": "Co-Founder | Director of Business Development"
+                },
+                {
+                    "key": "field_about_leadership_left_description",
+                    "label": "Description",
+                    "name": "description",
+                    "type": "textarea",
+                    "default_value": "With a strong background in AFL and WAFL, Nathan brings extensive experience in cultural advocacy and community engagement. At Yani Resources, he focuses on building inclusive workplaces and empowering Indigenous Australians in mining and construction industries."
+                },
+                {
+                    "key": "field_about_leadership_left_quote",
+                    "label": "Quote",
+                    "name": "quote",
+                    "type": "textarea",
+                    "default_value": "We provide quality solutions that meet technical scope while enabling social and economic inclusion"
+                },
+                {
+                    "key": "field_about_leadership_left_quote_author",
+                    "label": "Quote Author",
+                    "name": "quote_author",
+                    "type": "text",
+                    "default_value": "NATHAN"
+                }
+            ]
+        },
+        {
+            "key": "field_group_leadership_right",
+            "label": "Right Leadership Member",
+            "name": "about_leadership_right",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_about_leadership_right_image",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "return_format": "url",
+                    "preview_size": "medium"
+                },
+                {
+                    "key": "field_about_leadership_right_name",
+                    "label": "Full Name",
+                    "name": "name",
+                    "type": "text",
+                    "default_value": "Cameron Gibson"
+                },
+                {
+                    "key": "field_about_leadership_right_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "default_value": "Co-Founder | Director of Operations"
+                },
+                {
+                    "key": "field_about_leadership_right_description",
+                    "label": "Description",
+                    "name": "description",
+                    "type": "textarea",
+                    "default_value": "With over 20 years of experience in commercial electrical services, Cameron brings deep industry expertise to Yani Resources. He is passionate about renewable energy, respects Indigenous culture, and is committed to empowering the next generation with skills and career opportunities."
+                },
+                {
+                    "key": "field_about_leadership_right_quote",
+                    "label": "Quote",
+                    "name": "quote",
+                    "type": "textarea",
+                    "default_value": "Culturally respectful environments empower both Indigenous and non-Indigenous workers to thrive"
+                },
+                {
+                    "key": "field_about_leadership_right_quote_author",
+                    "label": "Quote Author",
+                    "name": "quote_author",
+                    "type": "text",
+                    "default_value": "CAMERON"
+                }
+            ]
+        },
+        {
+            "key": "field_tab_about_values",
+            "label": "Our Values Section",
+            "name": "",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_group_values_left",
+            "label": "Left Section (Image)",
+            "name": "about_values_left",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_about_values_left_image",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "return_format": "url",
+                    "preview_size": "medium"
+                }
+            ]
+        },
+        {
+            "key": "field_group_values_right",
+            "label": "Right Section (Values List)",
+            "name": "about_values_right",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_about_value_1",
+                    "label": "Value 1",
+                    "name": "value_1",
+                    "type": "group",
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_about_value_1_icon",
+                            "label": "Icon",
+                            "name": "icon",
+                            "type": "image",
+                            "return_format": "url",
+                            "preview_size": "thumbnail"
+                        },
+                        {
+                            "key": "field_about_value_1_title",
+                            "label": "Title",
+                            "name": "title",
+                            "type": "text",
+                            "default_value": "Community Empowerment"
+                        },
+                        {
+                            "key": "field_about_value_1_description",
+                            "label": "Description",
+                            "name": "description",
+                            "type": "text",
+                            "default_value": "Building opportunities that last"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_about_value_2",
+                    "label": "Value 2",
+                    "name": "value_2",
+                    "type": "group",
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_about_value_2_icon",
+                            "label": "Icon",
+                            "name": "icon",
+                            "type": "image",
+                            "return_format": "url",
+                            "preview_size": "thumbnail"
+                        },
+                        {
+                            "key": "field_about_value_2_title",
+                            "label": "Title",
+                            "name": "title",
+                            "type": "text",
+                            "default_value": "Honesty & Reliability"
+                        },
+                        {
+                            "key": "field_about_value_2_description",
+                            "label": "Description",
+                            "name": "description",
+                            "type": "text",
+                            "default_value": "Doing what we say, every time"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_about_value_3",
+                    "label": "Value 3",
+                    "name": "value_3",
+                    "type": "group",
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_about_value_3_icon",
+                            "label": "Icon",
+                            "name": "icon",
+                            "type": "image",
+                            "return_format": "url",
+                            "preview_size": "thumbnail"
+                        },
+                        {
+                            "key": "field_about_value_3_title",
+                            "label": "Title",
+                            "name": "title",
+                            "type": "text",
+                            "default_value": "Safety & Wellbeing"
+                        },
+                        {
+                            "key": "field_about_value_3_description",
+                            "label": "Description",
+                            "name": "description",
+                            "type": "text",
+                            "default_value": "Always standing strong together"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_about_value_4",
+                    "label": "Value 4",
+                    "name": "value_4",
+                    "type": "group",
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_about_value_4_icon",
+                            "label": "Icon",
+                            "name": "icon",
+                            "type": "image",
+                            "return_format": "url",
+                            "preview_size": "thumbnail"
+                        },
+                        {
+                            "key": "field_about_value_4_title",
+                            "label": "Title",
+                            "name": "title",
+                            "type": "text",
+                            "default_value": "Mateship & Teamwork"
+                        },
+                        {
+                            "key": "field_about_value_4_description",
+                            "label": "Description",
+                            "name": "description",
+                            "type": "text",
+                            "default_value": "Empowering projects, people and careers"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_about_value_5",
+                    "label": "Value 5",
+                    "name": "value_5",
+                    "type": "group",
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_about_value_5_icon",
+                            "label": "Icon",
+                            "name": "icon",
+                            "type": "image",
+                            "return_format": "url",
+                            "preview_size": "thumbnail"
+                        },
+                        {
+                            "key": "field_about_value_5_title",
+                            "label": "Title",
+                            "name": "title",
+                            "type": "text",
+                            "default_value": "Growth & Development"
+                        },
+                        {
+                            "key": "field_about_value_5_description",
+                            "label": "Description",
+                            "name": "description",
+                            "type": "text",
+                            "default_value": "Empowering projects, people and careers"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-about-us.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "hide_on_screen": ""
+}

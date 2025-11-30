@@ -1,0 +1,211 @@
+{
+    "key": "group_home_page",
+    "title": "Home Page Content",
+    "fields": [
+        {
+            "key": "field_tab_home_hero",
+            "label": "Hero Section",
+            "name": "",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_home_hero_image",
+            "label": "Hero Image",
+            "name": "home_hero_image",
+            "type": "image",
+            "return_format": "url",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_home_hero_headline",
+            "label": "Hero Headline",
+            "name": "home_hero_headline",
+            "type": "text",
+            "default_value": "Building<br>Capability.<br>Creating<br>Opportunity."
+        },
+        {
+            "key": "field_tab_home_intro",
+            "label": "Intro Section",
+            "name": "",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_home_intro_text_1",
+            "label": "Intro Text (Left)",
+            "name": "home_intro_text_1",
+            "type": "textarea",
+            "default_value": "Welcome to Yani Resources. Delivering specialised electrical and labour hire services, we are powered by integrity, community, and skilled delivery."
+        },
+        {
+            "key": "field_home_intro_text_2",
+            "label": "Intro Text (Right)",
+            "name": "home_intro_text_2",
+            "type": "textarea",
+            "default_value": "Proudly Aboriginal-owned, we provide high-quality services across construction, mining, government and infrastructure sectors, combining industry expertise with cultural respect."
+        },
+        {
+            "key": "field_tab_home_services",
+            "label": "Services Section",
+            "name": "",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_home_services_title",
+            "label": "Services Section Title",
+            "name": "home_services_title",
+            "type": "text",
+            "default_value": "Our Core Services"
+        },
+        {
+            "key": "field_home_services_left_subtitle",
+            "label": "Left Service Sub-title",
+            "name": "home_services_left_subtitle",
+            "type": "text",
+            "default_value": "Electrical & Instrumentation"
+        },
+        {
+            "key": "field_home_services_left_text",
+            "label": "Left Service Text",
+            "name": "home_services_left_text",
+            "type": "textarea",
+            "default_value": "Electrical contracting across installations, maintenance and commissioning. EC16722."
+        },
+        {
+            "key": "field_home_services_right_subtitle",
+            "label": "Right Service Sub-title",
+            "name": "home_services_right_subtitle",
+            "type": "text",
+            "default_value": "Labour Hire & Talent Deployment"
+        },
+        {
+            "key": "field_home_services_right_text",
+            "label": "Right Service Text",
+            "name": "home_services_right_text",
+            "type": "textarea",
+            "default_value": "Skilled, site-ready personnel supporting construction, mining and industrial operations."
+        },
+        {
+            "key": "field_tab_home_about",
+            "label": "About Section",
+            "name": "",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_home_about_quote",
+            "label": "About Quote",
+            "name": "home_about_quote",
+            "type": "textarea",
+            "default_value": "\"Yani\" is a Noongar word meaning peace. It reflects our mission, to create stronger communities through connection, opportunity and support."
+        },
+        {
+            "key": "field_home_about_intro",
+            "label": "About Intro Text",
+            "name": "home_about_intro",
+            "type": "textarea",
+            "default_value": "We're committed to building partnerships that deliver on scope, safety and social value. Here's why clients choose Yani Resources:"
+        },
+        {
+            "key": "field_home_about_list",
+            "label": "About Bullet Points",
+            "name": "home_about_list",
+            "type": "repeater",
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_home_about_list_item",
+                    "label": "Item",
+                    "name": "item",
+                    "type": "text"
+                }
+            ],
+            "default_value": [
+                {
+                    "item": "Consistent, high-quality project delivery"
+                },
+                {
+                    "item": "Workforce capability with cultural responsibility"
+                },
+                {
+                    "item": "Clear communication, safety and accountability"
+                },
+                {
+                    "item": "Meeting ESG and Indigenous procurement goals"
+                }
+            ]
+        },
+        {
+            "key": "field_home_about_text",
+            "label": "About Closing Text",
+            "name": "home_about_text",
+            "type": "textarea",
+            "default_value": "By building capabilities and creating pathways, we empower our clients to deliver meaningful outcomes, advancing projects, uplifting people, and strengthening the communities they serve."
+        },
+        {
+            "key": "field_tab_home_mission",
+            "label": "Mission & Vision",
+            "name": "",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_home_mission_title",
+            "label": "Mission Title",
+            "name": "home_mission_title",
+            "type": "text",
+            "default_value": "Our Mission"
+        },
+        {
+            "key": "field_home_mission",
+            "label": "Mission Text",
+            "name": "home_mission",
+            "type": "textarea",
+            "default_value": "To deliver exceptional services while creating long-term employment pathways and cultural empowerment."
+        },
+        {
+            "key": "field_home_vision_title",
+            "label": "Vision Title",
+            "name": "home_vision_title",
+            "type": "text",
+            "default_value": "Our Vision"
+        },
+        {
+            "key": "field_home_vision",
+            "label": "Vision Text",
+            "name": "home_vision",
+            "type": "textarea",
+            "default_value": "A future where commercial success and community strength go hand in hand."
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-home.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "front-page.php"
+            }
+        ],
+        [
+            {
+                "param": "page_type",
+                "operator": "==",
+                "value": "front_page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "hide_on_screen": ""
+}

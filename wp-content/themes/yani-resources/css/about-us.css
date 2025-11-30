@@ -1,0 +1,355 @@
+/* ============================================
+   START: Intro Section
+   ============================================ */
+.intro {
+    background-color: var(--primary-yellow);
+    color: var(--text-black);
+    padding: 40px 0;
+}
+
+.intro__container .row {
+    margin: 0;
+}
+
+.intro__container .g-5 {
+    --bs-gutter-x: 40px;
+    --bs-gutter-y: 0;
+}
+
+.intro__text {
+    font-size: 0.95rem;
+}
+/* ============================================
+   END: Intro Section
+   ============================================ */
+
+
+/* ============================================
+   START: Leadership Team Section
+   ============================================ */
+.leadership-team {
+    background-color: var(--text-white);
+    padding: 60px 0;
+}
+
+.leadership-team__title {
+    font-size: 62px;
+    font-weight: 700;
+    color: var(--text-black);
+    margin: 0;
+    line-height: 1.2;
+}
+
+.leadership-team__logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.leadership-team__member {
+    margin-bottom: 40px;
+}
+
+.leadership-team__photo {
+    margin-bottom: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.leadership-team__image {
+    width: 75%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.leadership-team__name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-black);
+    margin-bottom: 8px;
+}
+
+.leadership-team__job-title {
+    font-size: 1rem;
+    color: var(--text-black);
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.leadership-team__bio {
+    font-size: 0.95rem;
+    color: var(--text-black);
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.leadership-team__quote {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.leadership-team__quote-text {
+    font-size: 1rem;
+    color: var(--primary-red);
+    font-style: italic;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.leadership-team__quote-author {
+    font-size: 0.85rem;
+    color: var(--primary-red);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-style: normal;
+    display: block;
+}
+/* ============================================
+   END: Leadership Team Section
+   ============================================ */
+
+
+/* ============================================
+   START: Our Values Section
+   ============================================ */
+.our-values {
+    padding: 0;
+}
+
+.our-values__image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+}
+
+.our-values__image {
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.our-values__overlay-title {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--text-white);
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+.our-values__panel-content {
+    max-width: 600px;
+}
+
+.our-values__panel {
+    background-color: var(--primary-yellow);
+    padding: 60px 40px;
+    height: 100%;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.our-values__panel .row {
+    margin: 0;
+    width: 100%;
+}
+
+.our-values__panel .g-4 {
+    --bs-gutter-x: 30px;
+    --bs-gutter-y: 30px;
+}
+
+.our-values__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 0;
+}
+
+.our-values__icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0;
+}
+
+.our-values__icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.our-values__content {
+    width: 100%;
+}
+
+.our-values__item-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-black);
+    margin-bottom: 8px;
+}
+
+.our-values__item-description {
+    font-size: 0.95rem;
+    color: var(--text-black);
+    line-height: 1.5;
+    margin: 0;
+}
+/* ============================================
+   END: Our Values Section
+   ============================================ */
+
+
+/* ============================================
+   START: Industries We Support Section
+   ============================================ */
+.industries {
+    background-color: var(--text-white);
+    padding: 60px 0;
+}
+
+.industries__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-black);
+    margin: 0;
+    line-height: 1.2;
+}
+
+.industries__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.industries__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 5px 0;
+    border-bottom: 1px solid var(--text-black);
+}
+
+.industries__item:first-child {
+    border-top: 1px solid var(--text-black);
+}
+
+.industries__icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.industries__icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.industries__text {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--text-black);
+}
+/* ============================================
+   END: Industries We Support Section
+   ============================================ */
+
+
+/* ============================================
+   START: Worker Image Section
+   ============================================ */
+.worker-image {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.worker-image__img {
+    width: 100%;
+    height: 1040px;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+/* ============================================
+   END: Worker Image Section
+   ============================================ */
+
+
+/* ============================================
+   START: Responsive Design (About Us Page Specific)
+   ============================================ */
+@media (max-width: 768px) {
+    .leadership-team__title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .leadership-team__logo {
+        max-width: 120px;
+        margin-top: 20px;
+    }
+
+    .leadership-team__image {
+        height: 300px;
+    }
+
+    .leadership-team__name {
+        font-size: 1.5rem;
+    }
+
+    .our-values__image-wrapper {
+        min-height: 400px;
+    }
+
+    .our-values__image {
+        min-height: 400px;
+    }
+
+    .our-values__overlay-title {
+        font-size: 2.5rem;
+        top: 30px;
+        left: 30px;
+    }
+
+    .our-values__panel {
+        min-height: 400px;
+        padding: 40px 30px;
+    }
+
+    .our-values__item {
+        margin-bottom: 25px;
+    }
+
+    .our-values__item-title {
+        font-size: 1.1rem;
+    }
+
+    .industries__title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .industries__text {
+        font-size: 1rem;
+    }
+
+    .worker-image__img {
+        height: 320px;
+    }
+}
+/* ============================================
+   END: Responsive Design (About Us Page Specific)
+   ============================================ */

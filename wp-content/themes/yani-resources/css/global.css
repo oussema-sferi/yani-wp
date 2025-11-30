@@ -1,0 +1,374 @@
+/* ============================================
+   START: CSS Variables
+   ============================================ */
+:root {
+    --primary-yellow: #FCD958;
+    --primary-red: #F65D5D;
+    --text-black: #000000;
+    --text-white: #FFFFFF;
+    --text-dark-gray: #4d4d4d;
+    --font-main: 'Inter', sans-serif;
+}
+/* ============================================
+   END: CSS Variables
+   ============================================ */
+
+
+/* ============================================
+   START: Reset & Base Styles
+   ============================================ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-black);
+    line-height: 1.5;
+}
+
+/* Override Bootstrap container max-width to match original */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
+/* ============================================
+   END: Reset & Base Styles
+   ============================================ */
+
+
+/* ============================================
+   START: Header (Global Component)
+   ============================================ */
+.header {
+    background-color: var(--text-black);
+    color: var(--text-white);
+    padding: 15px 0;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.header__container .row {
+    margin: 0;
+}
+
+.header__hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+}
+
+.header__hamburger-bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-white);
+    transition: 0.3s;
+}
+
+.header__nav {
+    position: static;
+    display: block;
+    background-color: transparent;
+    padding: 0;
+    z-index: 100;
+    color: var(--text-white);
+}
+
+.header__nav-list {
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.header__nav-link {
+    color: var(--primary-yellow);
+}
+
+.header__nav-link:hover {
+    color: var(--text-white);
+}
+
+.header__nav-link.active {
+    color: var(--text-white);
+}
+
+.header__logo {
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+/* ============================================
+   END: Header (Global Component)
+   ============================================ */
+
+
+/* ============================================
+   START: Hero Section (Global Component)
+   ============================================ */
+.hero {
+    background-color: #333;
+    background-size: cover;
+    background-position: center;
+    color: var(--text-white);
+    padding: 40px 0;
+    min-height: 600px;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.hero__container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero__logo {
+    margin-bottom: 100px;
+}
+
+.hero__logo-image {
+    width: 350px;
+    height: 150px;
+    background-image: url('../assets/images/Yani-Logo-Rev.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    margin-bottom: 20px;
+}
+
+.hero__headline {
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1.1;
+}
+/* ============================================
+   END: Hero Section (Global Component)
+   ============================================ */
+
+
+/* ============================================
+   START: Footer (Global Component)
+   ============================================ */
+.footer {
+    background-color: var(--text-black);
+    color: var(--text-white);
+    padding: 60px 0 20px;
+    font-size: 0.9rem;
+}
+
+.footer__top .row {
+    margin: 0 0 40px 0;
+}
+
+.footer__top .g-4 {
+    --bs-gutter-x: 40px;
+    --bs-gutter-y: 0;
+}
+
+.footer__column--center {
+    display: flex;
+    /*justify-content: center;*/
+}
+
+.footer__heading {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.footer__text {
+    margin-bottom: 10px;
+}
+
+.footer__logo {
+    width: 300px;
+    height: 200px;
+    background-image: url('../assets/images/Yani-Logo-Rev.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*margin: 0 auto;*/
+}
+
+.footer__middle .row {
+    margin: 0 0 40px 0;
+}
+
+.footer__middle .g-4 {
+    --bs-gutter-x: 40px;
+    --bs-gutter-y: 0;
+}
+
+.footer__contact-icon {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.footer__contact-icon img,
+.footer__icon-img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer__contact-name {
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+    color: #ccc;
+}
+
+.footer__contact-info {
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+}
+
+.footer__bottom {
+    border-top: 1px solid var(--text-white);
+    border-bottom: 1px solid var(--text-white);
+    padding: 60px 20px;
+    
+}
+
+.footer__bottom .row {
+    margin: 0;
+}
+
+.footer__bottom .g-4 {
+    --bs-gutter-x: 40px;
+    --bs-gutter-y: 0;
+}
+
+.footer__acknowledgement {
+    padding-right: 20px;
+}
+
+.footer__acknowledgement-text {
+    font-size: 1.5rem;
+    color: var(--primary-yellow);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.footer__badges {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer__badges-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer__badge-image {
+    max-width: 120px;
+    height: auto;
+}
+
+.footer__badge-text {
+    font-size: 0.9rem;
+    color: var(--text-white);
+    margin: 0;
+    white-space: nowrap;
+}
+
+.footer__copyright {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: var(--text-dark-gray);
+}
+
+.footer__copyright-link {
+    text-decoration: underline;
+}
+/* ============================================
+   END: Footer (Global Component)
+   ============================================ */
+
+
+/* ============================================
+   START: Buttons (Global Utility)
+   ============================================ */
+.btn {
+    display: inline-block;
+    border: 1px solid var(--text-black);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    transition: background 0.3s;
+    background: transparent;
+}
+
+.btn--outline:hover {
+    background-color: var(--text-black);
+    color: var(--primary-yellow);
+}
+/* ============================================
+   END: Buttons (Global Utility)
+   ============================================ */
+
+
+/* ============================================
+   START: Responsive Design (Global)
+   ============================================ */
+@media (max-width: 768px) {
+    .hero__headline {
+        font-size: 2.5rem;
+    }
+
+    .header__hamburger {
+        display: flex;
+    }
+
+    .header__nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--text-black);
+        padding: 20px 0;
+        display: none;
+    }
+
+    .header__nav.active {
+        display: block;
+    }
+
+    .header__nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+/* ============================================
+   END: Responsive Design (Global)
+   ============================================ */
