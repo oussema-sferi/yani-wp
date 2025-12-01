@@ -112,7 +112,7 @@ get_template_part( 'template-parts/components/hero' );
 
 <!-- Feature Image Section -->
 <section class="feature-image">
-    <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/worker.jpg' ); ?>" alt="Feature Image" class="feature-image__img">
+    <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/home-banner-logo.webp' ); ?>" alt="Feature Image" class="feature-image__img">
 </section>
 
 <!-- Mission Vision Section -->
