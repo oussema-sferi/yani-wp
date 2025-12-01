@@ -38,8 +38,8 @@ yani_render_hero(
                     ?>
                     
                     <p class="services-page__license"><?php echo esc_html( $license ); ?></p>
-                    <h2 class="services-page__title"><?php echo wp_kses_post( $title ); ?></h2>
-                    <div class="services-page__content"><?php echo apply_filters( 'the_content', $content ); ?></div>
+                    <h2 class="services-page__title heading-primary"><?php echo wp_kses_post( $title ); ?></h2>
+                    <div class="services-page__content text-medium"><?php echo apply_filters( 'the_content', $content ); ?></div>
                 </div>
             </div>
             
@@ -88,8 +88,8 @@ yani_render_hero(
                     $section_2_content = get_field( 'services_section_2_content', $page_id );
                     ?>
                     
-                    <h2 class="services-page__title"><?php echo wp_kses_post( $section_2_title ); ?></h2>
-                    <div class="services-page__content"><?php echo apply_filters( 'the_content', $section_2_content ); ?></div>
+                    <h2 class="services-page__title heading-primary"><?php echo wp_kses_post( $section_2_title ); ?></h2>
+                    <div class="services-page__content text-medium"><?php echo apply_filters( 'the_content', $section_2_content ); ?></div>
                 </div>
             </div>
         </div>

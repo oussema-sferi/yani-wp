@@ -10,9 +10,9 @@
     background-color: var(--text-white);
 }
 
-.services-page .container {
+/*.services-page .container {
     max-width: 1200px;
-}
+}*/
 
 .services-page .row {
     margin: 0;
@@ -38,17 +38,18 @@
 }
 
 .services-page__title {
-    font-size: 2.5rem;
-    font-weight: 600;
     margin-bottom: 25px;
     color: var(--text-black);
-    line-height: 1.2;
 }
 
 .services-page__content {
-    font-size: 0.95rem;
     color: var(--text-black);
-    line-height: 1.6;
+}
+
+.services-page__content.text-medium,
+.services-page__content.text-medium p {
+    font-size: 23px;
+    line-height: 1.5;
 }
 
 .services-page__content p {
@@ -110,9 +111,6 @@
         padding: 40px 0;
     }
 
-    .services-page__title {
-        font-size: 2rem;
-    }
 
     .services-page__image-wrapper {
         margin-top: 30px;
