@@ -1,0 +1,64 @@
+{
+    "key": "group_indigenous_participation_page",
+    "title": "Indigenous Participation Page Content",
+    "fields": [
+        {
+            "key": "field_tab_indigenous_hero",
+            "label": "Hero Section",
+            "name": "",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_indigenous_hero_image",
+            "label": "Hero Image",
+            "name": "indigenous_hero_image",
+            "type": "image",
+            "return_format": "url",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_indigenous_hero_headline",
+            "label": "Hero Headline",
+            "name": "indigenous_hero_headline",
+            "type": "text",
+            "default_value": "Indigenous Participation"
+        },
+        {
+            "key": "field_tab_indigenous_intro",
+            "label": "Intro Section",
+            "name": "",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_indigenous_intro_text_1",
+            "label": "Intro Text (Left)",
+            "name": "indigenous_intro_text_1",
+            "type": "textarea",
+            "default_value": "Yani Resources is committed to creating meaningful opportunities for Indigenous Australians through employment, mentorship and industry collaboration."
+        },
+        {
+            "key": "field_indigenous_intro_text_2",
+            "label": "Intro Text (Right)",
+            "name": "indigenous_intro_text_2",
+            "type": "textarea",
+            "default_value": "We are focused on providing employment and traineeship pathways in culturally safe workplaces, helping Indigenous workers build sustainable careers in construction, mining and industrial services."
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates/page-indigenous-participation.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "hide_on_screen": ""
+}
+

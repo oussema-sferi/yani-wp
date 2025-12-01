@@ -1,0 +1,25 @@
+/* ============================================
+   START: Intro Section
+   ============================================ */
+.intro {
+    background-color: var(--primary-red);
+    color: var(--text-white);
+    padding: 40px 0;
+}
+
+.intro__container .row {
+    margin: 0;
+}
+
+.intro__container .g-5 {
+    --bs-gutter-x: 40px;
+    --bs-gutter-y: 0;
+}
+
+.intro__text {
+    font-size: 0.95rem;
+}
+/* ============================================
+   END: Intro Section
+   ============================================ */
+
