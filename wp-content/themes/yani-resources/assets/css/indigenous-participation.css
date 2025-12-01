@@ -16,9 +16,7 @@
     --bs-gutter-y: 0;
 }
 
-.intro__text {
-    font-size: 0.95rem;
-}
+/* .intro__text font size now handled by text-large class */
 /* ============================================
    END: Intro Section
    ============================================ */
@@ -32,9 +30,9 @@
     padding: 60px 0;
 }
 
-.indigenous-participation-page .container {
+/*.indigenous-participation-page .container {
     max-width: 1200px;
-}
+}*/
 
 .indigenous-participation-page .row {
     margin: 0;
@@ -53,26 +51,18 @@
 }
 
 .indigenous-participation-page__title {
-    font-size: 2.5rem;
-    font-weight: 600;
     margin-bottom: 25px;
     color: var(--text-black);
-    line-height: 1.2;
 }
 
 .indigenous-participation-page__subtitle {
-    font-size: 1.8rem;
-    font-weight: 600;
     margin-top: 30px;
     margin-bottom: 20px;
     color: var(--text-black);
-    line-height: 1.2;
 }
 
 .indigenous-participation-page__content {
-    font-size: 0.95rem;
     color: var(--text-black);
-    line-height: 1.6;
 }
 
 .indigenous-participation-page__content p {
@@ -158,9 +148,9 @@
     padding: 60px 0;
 }
 
-.indigenous-quotes .container {
+/*.indigenous-quotes .container {
     max-width: 1200px;
-}
+}*/
 
 .indigenous-quotes .row {
     margin: 0;
@@ -176,23 +166,19 @@
 }
 
 .indigenous-quotes__text {
-    font-size: 1.5rem;
     color: var(--text-black);
-    line-height: 1.6;
     margin: 0 0 20px 0;
     font-style: normal;
-    font-weight: 600;
+    line-height: 1.2;
 }
 
 .indigenous-quotes__name {
-    font-size: 1rem;
     font-weight: 700;
     color: var(--text-black);
     margin: 0 0 8px 0;
 }
 
 .indigenous-quotes__title {
-    font-size: 0.9rem;
     color: var(--text-black);
     margin: 0;
     font-weight: 400;

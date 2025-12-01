@@ -26,12 +26,12 @@
    ============================================ */
 .contact-cta {
     background-color: var(--primary-yellow);
-    padding: 60px 0;
+    padding: 100px 0;
 }
 
-.contact-cta .container {
+/*.contact-cta .container {
     max-width: 1200px;
-}
+}*/
 
 .contact-cta .row {
     margin: 0;
@@ -41,16 +41,10 @@
     text-align: left;
     color: var(--text-black);
     margin: 0;
-    font-size: 2rem;
-    font-weight: 600;
-    line-height: 1.4;
 }
 
 .contact-cta__text p {
     margin: 0;
-    font-size: 2rem;
-    font-weight: 600;
-    line-height: 1.4;
 }
 
 /* Responsive adjustments */
@@ -59,13 +53,6 @@
         padding: 40px 0;
     }
     
-    .contact-cta__text {
-        font-size: 1.5rem;
-    }
-    
-    .contact-cta__text p {
-        font-size: 1.5rem;
-    }
 }
 /* ============================================
    END: CTA Section

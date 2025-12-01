@@ -31,7 +31,7 @@ yani_render_hero(
                 <?php
                 $cta_text = get_field( 'contact_cta_text', $page_id );
                 ?>
-                <div class="contact-cta__text">
+                <div class="contact-cta__text heading-primary">
                     <?php echo apply_filters( 'the_content', $cta_text ); ?>
                 </div>
             </div>

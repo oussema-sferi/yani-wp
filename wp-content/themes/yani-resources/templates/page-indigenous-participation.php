@@ -31,13 +31,13 @@ yani_render_hero(
                 <?php
                 $intro_text_1 = get_field( 'indigenous_intro_text_1', $page_id );
                 ?>
-                <p><?php echo esc_html( $intro_text_1 ); ?></p>
+                <p class="text-large"><?php echo esc_html( $intro_text_1 ); ?></p>
             </div>
             <div class="col-md-6 intro__text">
                 <?php
                 $intro_text_2 = get_field( 'indigenous_intro_text_2', $page_id );
                 ?>
-                <p><?php echo esc_html( $intro_text_2 ); ?></p>
+                <p class="text-large"><?php echo esc_html( $intro_text_2 ); ?></p>
             </div>
         </div>
     </div>
@@ -57,14 +57,14 @@ yani_render_hero(
                     $partnering_partners = get_field( 'indigenous_partnering_partners', $page_id );
                     ?>
                     
-                    <h2 class="indigenous-participation-page__title"><?php echo wp_kses_post( $partnering_title ); ?></h2>
-                    <div class="indigenous-participation-page__content"><?php echo apply_filters( 'the_content', $partnering_content ); ?></div>
+                    <h2 class="indigenous-participation-page__title heading-primary"><?php echo wp_kses_post( $partnering_title ); ?></h2>
+                    <div class="indigenous-participation-page__content text-medium"><?php echo apply_filters( 'the_content', $partnering_content ); ?></div>
                     
                     <?php if ( $partnering_subtitle ) : ?>
-                        <h3 class="indigenous-participation-page__subtitle"><?php echo esc_html( $partnering_subtitle ); ?></h3>
+                        <h3 class="indigenous-participation-page__subtitle heading-secondary"><?php echo esc_html( $partnering_subtitle ); ?></h3>
                     <?php endif; ?>
                     
-                    <div class="indigenous-participation-page__content"><?php echo apply_filters( 'the_content', $partnering_partners ); ?></div>
+                    <div class="indigenous-participation-page__content text-medium"><?php echo apply_filters( 'the_content', $partnering_partners ); ?></div>
                 </div>
             </div>
             
@@ -99,13 +99,13 @@ yani_render_hero(
                     $quote_left_title = $quote_left['title'] ?? '';
                     ?>
                     <?php if ( $quote_left_text ) : ?>
-                        <p class="indigenous-quotes__text">”<?php echo esc_html( $quote_left_text ); ?>”</p>
+                        <p class="indigenous-quotes__text heading-tertiary">”<?php echo esc_html( $quote_left_text ); ?>”</p>
                     <?php endif; ?>
                     <?php if ( $quote_left_name ) : ?>
-                        <p class="indigenous-quotes__name"><?php echo esc_html( $quote_left_name ); ?></p>
+                        <p class="indigenous-quotes__name heading-tertiary"><?php echo esc_html( $quote_left_name ); ?></p>
                     <?php endif; ?>
                     <?php if ( $quote_left_title ) : ?>
-                        <p class="indigenous-quotes__title"><?php echo esc_html( $quote_left_title ); ?></p>
+                        <p class="indigenous-quotes__title text-medium"><?php echo esc_html( $quote_left_title ); ?></p>
                     <?php endif; ?>
                 </div>
             </div>
@@ -120,13 +120,13 @@ yani_render_hero(
                     $quote_right_title = $quote_right['title'] ?? '';
                     ?>
                     <?php if ( $quote_right_text ) : ?>
-                        <p class="indigenous-quotes__text">”<?php echo esc_html( $quote_right_text ); ?>”</p>
+                        <p class="indigenous-quotes__text heading-tertiary">”<?php echo esc_html( $quote_right_text ); ?>”</p>
                     <?php endif; ?>
                     <?php if ( $quote_right_name ) : ?>
-                        <p class="indigenous-quotes__name"><?php echo esc_html( $quote_right_name ); ?></p>
+                        <p class="indigenous-quotes__name heading-tertiary"><?php echo esc_html( $quote_right_name ); ?></p>
                     <?php endif; ?>
                     <?php if ( $quote_right_title ) : ?>
-                        <p class="indigenous-quotes__title"><?php echo esc_html( $quote_right_title ); ?></p>
+                        <p class="indigenous-quotes__title text-medium"><?php echo esc_html( $quote_right_title ); ?></p>
                     <?php endif; ?>
                 </div>
             </div>
