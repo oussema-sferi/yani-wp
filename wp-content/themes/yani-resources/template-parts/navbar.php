@@ -21,17 +21,15 @@ $is_about = is_page( 'about-us' ) || is_page_template( 'page-about-us.php' );
             </div>
             <div class="col">
                 <nav class="header__nav">
-                    <ul class="header__nav-list">
-                        <li class="header__nav-item">
-                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="header__nav-link <?php echo $is_home ? 'active' : ''; ?>">Home</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="<?php echo esc_url( home_url( '/about-us' ) ); ?>" class="header__nav-link <?php echo $is_about ? 'active' : ''; ?>">About Us</a>
-                        </li>
-                        <li class="header__nav-item"><a href="#" class="header__nav-link">Services</a></li>
-                        <li class="header__nav-item"><a href="#" class="header__nav-link">Indigenous Participation</a></li>
-                        <li class="header__nav-item"><a href="#" class="header__nav-link">Contact</a></li>
-                    </ul>
+                    <?php
+                    wp_nav_menu( array(
+                        'theme_location' => 'primary',
+                        'container'      => false,
+                        'menu_class'     => 'header__nav-list',
+                        'fallback_cb'    => 'yani_resources_fallback_menu',
+                        'depth'          => 1,
+                    ) );
+                    ?>
                 </nav>
             </div>
             <div class="col-auto">
