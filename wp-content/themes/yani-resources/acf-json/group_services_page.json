@@ -1,0 +1,82 @@
+{
+    "key": "group_services_page",
+    "title": "Services Page Content",
+    "fields": [
+        {
+            "key": "field_tab_services_hero",
+            "label": "Hero Section",
+            "name": "",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_services_hero_image",
+            "label": "Hero Image",
+            "name": "services_hero_image",
+            "type": "image",
+            "return_format": "url",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_services_hero_headline",
+            "label": "Hero Headline",
+            "name": "services_hero_headline",
+            "type": "text",
+            "default_value": "Our Services"
+        },
+        {
+            "key": "field_tab_services_content",
+            "label": "Services Content Section",
+            "name": "",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_services_license",
+            "label": "License Number",
+            "name": "services_license",
+            "type": "text",
+            "default_value": "(EC16702)"
+        },
+        {
+            "key": "field_services_title",
+            "label": "Service Title",
+            "name": "services_title",
+            "type": "text",
+            "default_value": "Electrical &<br>Instrumentation<br>Services"
+        },
+        {
+            "key": "field_services_content",
+            "label": "Content",
+            "name": "services_content",
+            "type": "wysiwyg",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "default_value": "<p>Yani Resources delivers specialised electrical and instrumentation services for industrial mining, energy and infrastructure projects. Our qualified and experienced technicians combine technical expertise with safety, quality and cultural integrity, supporting clients across installation, maintenance and commissioning phases, ensuring compliance with Australian Standards.</p>\n\n<ul>\n<li>High &amp; low voltage installations</li>\n<li>Switchboard design &amp; fabrication</li>\n<li>Power distribution systems</li>\n<li>Preventative &amp; reactive maintenance</li>\n<li>Solar &amp; battery storage</li>\n<li>Instrument installation &amp; calibration</li>\n<li>Process control, SCADA, PLC &amp; DCS support</li>\n<li>Testing &amp; commissioning (FAT/SAT, loop, RCD checks)</li>\n</ul>\n\n<p>We combine reliable industry expertise with Indigenous participation, delivering safe, certified and dependable E&amp;I solutions.</p>"
+        },
+        {
+            "key": "field_services_image",
+            "label": "Right Side Image",
+            "name": "services_image",
+            "type": "image",
+            "return_format": "url",
+            "preview_size": "medium"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates/page-services.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "hide_on_screen": ""
+}
+

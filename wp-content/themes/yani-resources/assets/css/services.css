@@ -1,0 +1,115 @@
+/* ============================================
+   START: Services Page Section
+   ============================================ */
+.services-page {
+    background-color: var(--primary-yellow);
+    padding: 60px 0;
+}
+
+.services-page .container {
+    max-width: 1200px;
+}
+
+.services-page .row {
+    margin: 0;
+    display: flex;
+    align-items: stretch;
+}
+
+.services-page .col-md-6 {
+    display: flex;
+    flex-direction: column;
+}
+
+.services-page__license {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--text-black);
+}
+
+.services-page__title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: var(--text-black);
+    line-height: 1.2;
+}
+
+.services-page__content {
+    font-size: 0.95rem;
+    color: var(--text-black);
+    line-height: 1.6;
+}
+
+.services-page__content p {
+    margin-bottom: 20px;
+}
+
+.services-page__content ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    padding-left: 0;
+}
+
+/*.services-page__content ul li {
+    margin-bottom: 10px;
+    list-style-position: inside;
+}*/
+
+.services-page__content ol {
+    list-style: decimal;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    padding-left: 0;
+}
+
+.services-page__content ol li {
+    margin-bottom: 10px;
+    list-style-position: inside;
+}
+
+.services-page__content strong {
+    font-weight: 600;
+}
+
+.services-page__content em {
+    font-style: italic;
+}
+
+.services-page__image-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.services-page__image {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .services-page {
+        padding: 40px 0;
+    }
+
+    .services-page__title {
+        font-size: 2rem;
+    }
+
+    .services-page__image-wrapper {
+        margin-top: 30px;
+    }
+}
+/* ============================================
+   END: Services Page Section
+   ============================================ */
+

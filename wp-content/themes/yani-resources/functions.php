@@ -17,6 +17,7 @@ require_once get_template_directory() . '/inc/acf.php';
 function yani_resources_add_page_templates( $templates ) {
     $templates['templates/page-home.php'] = 'Home Page';
     $templates['templates/page-about-us.php'] = 'About Us';
+    $templates['templates/page-services.php'] = 'Services';
     return $templates;
 }
 add_filter( 'theme_page_templates', 'yani_resources_add_page_templates' );
