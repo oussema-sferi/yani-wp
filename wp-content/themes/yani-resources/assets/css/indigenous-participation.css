@@ -149,3 +149,68 @@
    END: Partnering Section
    ============================================ */
 
+
+/* ============================================
+   START: Quotes Section
+   ============================================ */
+.indigenous-quotes {
+    background-color: var(--primary-yellow);
+    padding: 60px 0;
+}
+
+.indigenous-quotes .container {
+    max-width: 1200px;
+}
+
+.indigenous-quotes .row {
+    margin: 0;
+}
+
+.indigenous-quotes .g-5 {
+    --bs-gutter-x: 40px;
+    --bs-gutter-y: 0;
+}
+
+.indigenous-quotes__item {
+    width: 100%;
+}
+
+.indigenous-quotes__text {
+    font-size: 1.5rem;
+    color: var(--text-black);
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.indigenous-quotes__name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-black);
+    margin: 0 0 8px 0;
+}
+
+.indigenous-quotes__title {
+    font-size: 0.9rem;
+    color: var(--text-black);
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .indigenous-quotes {
+        padding: 40px 0;
+    }
+
+    .indigenous-quotes .g-5 {
+        --bs-gutter-x: 0;
+        --bs-gutter-y: 30px;
+    }
+}
+/* ============================================
+   END: Quotes Section
+   ============================================ */
+

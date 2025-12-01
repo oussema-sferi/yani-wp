@@ -93,6 +93,73 @@
             "type": "image",
             "return_format": "url",
             "preview_size": "medium"
+        },
+        {
+            "key": "field_tab_indigenous_quotes",
+            "label": "Quotes Section",
+            "name": "",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_group_indigenous_quote_left",
+            "label": "Left Quote (Nathan Wilson)",
+            "name": "indigenous_quote_left",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_indigenous_quote_left_text",
+                    "label": "Quote Text",
+                    "name": "quote",
+                    "type": "textarea",
+                    "default_value": "Our approach is grounded in lived experience, fostering environments where cultural identity is respected, and community values are upheld onsite and offsite"
+                },
+                {
+                    "key": "field_indigenous_quote_left_name",
+                    "label": "Name",
+                    "name": "name",
+                    "type": "text",
+                    "default_value": "Nathan Wilson"
+                },
+                {
+                    "key": "field_indigenous_quote_left_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "default_value": "Co-Founder | Director of Business Development"
+                }
+            ]
+        },
+        {
+            "key": "field_group_indigenous_quote_right",
+            "label": "Right Quote (Cameron Gibson)",
+            "name": "indigenous_quote_right",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_indigenous_quote_right_text",
+                    "label": "Quote Text",
+                    "name": "quote",
+                    "type": "textarea",
+                    "default_value": "By combining high-quality, safe operations with culturally safe practices, we build stronger, resilient communities that benefit clients and people alike."
+                },
+                {
+                    "key": "field_indigenous_quote_right_name",
+                    "label": "Name",
+                    "name": "name",
+                    "type": "text",
+                    "default_value": "Cameron Gibson"
+                },
+                {
+                    "key": "field_indigenous_quote_right_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "default_value": "Co-Founder | Director of Operations"
+                }
+            ]
         }
     ],
     "location": [

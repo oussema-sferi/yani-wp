@@ -92,6 +92,55 @@ get_template_part( 'template-parts/components/hero' );
     </div>
 </section>
 
+<!-- Quotes Section -->
+<section class="indigenous-quotes">
+    <div class="container">
+        <div class="row g-5">
+            <!-- Left Quote -->
+            <div class="col-md-6">
+                <div class="indigenous-quotes__item">
+                    <?php
+                    $quote_left = get_field( 'indigenous_quote_left', $page_id );
+                    $quote_left_text = $quote_left['quote'] ?? '';
+                    $quote_left_name = $quote_left['name'] ?? '';
+                    $quote_left_title = $quote_left['title'] ?? '';
+                    ?>
+                    <?php if ( $quote_left_text ) : ?>
+                        <p class="indigenous-quotes__text">”<?php echo esc_html( $quote_left_text ); ?>”</p>
+                    <?php endif; ?>
+                    <?php if ( $quote_left_name ) : ?>
+                        <p class="indigenous-quotes__name"><?php echo esc_html( $quote_left_name ); ?></p>
+                    <?php endif; ?>
+                    <?php if ( $quote_left_title ) : ?>
+                        <p class="indigenous-quotes__title"><?php echo esc_html( $quote_left_title ); ?></p>
+                    <?php endif; ?>
+                </div>
+            </div>
+            
+            <!-- Right Quote -->
+            <div class="col-md-6">
+                <div class="indigenous-quotes__item">
+                    <?php
+                    $quote_right = get_field( 'indigenous_quote_right', $page_id );
+                    $quote_right_text = $quote_right['quote'] ?? '';
+                    $quote_right_name = $quote_right['name'] ?? '';
+                    $quote_right_title = $quote_right['title'] ?? '';
+                    ?>
+                    <?php if ( $quote_right_text ) : ?>
+                        <p class="indigenous-quotes__text">”<?php echo esc_html( $quote_right_text ); ?>”</p>
+                    <?php endif; ?>
+                    <?php if ( $quote_right_name ) : ?>
+                        <p class="indigenous-quotes__name"><?php echo esc_html( $quote_right_name ); ?></p>
+                    <?php endif; ?>
+                    <?php if ( $quote_right_title ) : ?>
+                        <p class="indigenous-quotes__title"><?php echo esc_html( $quote_right_title ); ?></p>
+                    <?php endif; ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <?php
 get_footer();
 
