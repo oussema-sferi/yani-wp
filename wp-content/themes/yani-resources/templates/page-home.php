@@ -77,9 +77,9 @@ yani_render_hero(
     <div class="container about__container">
         <div class="row g-5">
             <div class="col-md-6 about__quote">
-                <h2 class="about__quote-text heading-primary"><?php echo get_field( 'home_about_quote', $page_id ) ?: '"Yani" is a Noongar word meaning peace.<br>It reflects our mission, to create stronger communities through connection, opportunity and support.'; ?></h2>
+                <h2 class="about__quote-text heading-primary"><?php echo get_field( 'home_about_quote', $page_id ) ?: '”Yani” is a Noongar word meaning peace.<br>It reflects our mission, to create stronger communities through connection, opportunity and support.'; ?></h2>
             </div>
-            <div class="col-md-6 about__content text-large">
+            <div class="col-md-6 about__content text-medium">
                 <p class="about__content-intro"><?php echo esc_html( get_field( 'home_about_intro', $page_id ) ?: 'We\'re committed to building partnerships that deliver on scope, safety and social value. Here\'s why clients choose Yani Resources:' ); ?></p>
                 <ul class="about__content-list">
                     <?php

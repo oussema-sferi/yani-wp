@@ -355,8 +355,8 @@ ul {
     display: inline-block;
     border: 1px solid var(--text-black);
     padding: 8px 20px;
-    border-radius: 20px;
-    font-size: 0.8rem;
+    border-radius: 30px;
+    font-size: 23px;
     text-transform: uppercase;
     transition: background 0.3s;
     background: transparent;
