@@ -141,6 +141,47 @@ get_template_part( 'template-parts/components/hero' );
     </div>
 </section>
 
+<!-- Gallery Section -->
+<section class="indigenous-gallery">
+    <div class="container-fluid px-0">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <div class="indigenous-gallery__wrapper">
+                    <?php
+                    $gallery_image_1 = get_field( 'indigenous_gallery_image_1', $page_id );
+                    if ( ! $gallery_image_1 ) {
+                        $gallery_image_1 = get_template_directory_uri() . '/assets/images/Yani-1_1.jpeg';
+                    }
+                    ?>
+                    <img src="<?php echo esc_url( $gallery_image_1 ); ?>" alt="Gallery Image 1" class="indigenous-gallery__image">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="indigenous-gallery__wrapper">
+                    <?php
+                    $gallery_image_2 = get_field( 'indigenous_gallery_image_2', $page_id );
+                    if ( ! $gallery_image_2 ) {
+                        $gallery_image_2 = get_template_directory_uri() . '/assets/images/Yani-1_2.jpeg';
+                    }
+                    ?>
+                    <img src="<?php echo esc_url( $gallery_image_2 ); ?>" alt="Gallery Image 2" class="indigenous-gallery__image">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="indigenous-gallery__wrapper">
+                    <?php
+                    $gallery_image_3 = get_field( 'indigenous_gallery_image_3', $page_id );
+                    if ( ! $gallery_image_3 ) {
+                        $gallery_image_3 = get_template_directory_uri() . '/assets/images/Yani-1_3.jpeg';
+                    }
+                    ?>
+                    <img src="<?php echo esc_url( $gallery_image_3 ); ?>" alt="Gallery Image 3" class="indigenous-gallery__image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <?php
 get_footer();
 

@@ -160,6 +160,40 @@
                     "default_value": "Co-Founder | Director of Operations"
                 }
             ]
+        },
+        {
+            "key": "field_tab_indigenous_gallery",
+            "label": "Gallery Section",
+            "name": "",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_indigenous_gallery_image_1",
+            "label": "Image 1 (Left)",
+            "name": "indigenous_gallery_image_1",
+            "type": "image",
+            "return_format": "url",
+            "preview_size": "medium",
+            "default_value": ""
+        },
+        {
+            "key": "field_indigenous_gallery_image_2",
+            "label": "Image 2 (Center)",
+            "name": "indigenous_gallery_image_2",
+            "type": "image",
+            "return_format": "url",
+            "preview_size": "medium",
+            "default_value": ""
+        },
+        {
+            "key": "field_indigenous_gallery_image_3",
+            "label": "Image 3 (Right)",
+            "name": "indigenous_gallery_image_3",
+            "type": "image",
+            "return_format": "url",
+            "preview_size": "medium",
+            "default_value": ""
         }
     ],
     "location": [
