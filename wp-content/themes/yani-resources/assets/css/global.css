@@ -2,11 +2,11 @@
    START: CSS Variables
    ============================================ */
 :root {
-    --primary-yellow: #FCD958;
-    --primary-red: #F65D5D;
+    --primary-yellow: #FFDE53;
+    --primary-red: #FC5856;
     --text-black: #000000;
     --text-white: #FFFFFF;
-    --text-dark-gray: #4d4d4d;
+    --text-dark-gray: #9A9A9A;
     --font-main: 'Inter', sans-serif;
 }
 /* ============================================
@@ -29,9 +29,44 @@ body {
     line-height: 1.5;
 }
 
+/* ============================================
+   START: Typography - Global Heading Class
+   ============================================ */
+.heading-primary {
+    font-size: 62px;
+    line-height: 71px;
+    font-weight: 500;
+    color: var(--text-black);
+}
+
+.heading-secondary {
+    font-size: 46px;
+    line-height: 71px;
+    font-weight: 500;
+    color: var(--text-black);
+}
+
+.heading-tertiary {
+    font-size: 38px;
+    font-weight: 500;
+}
+
+.text-large {
+    font-size: 32px;
+    line-height: 1.5;
+}
+
+.text-medium {
+    font-size: 23px;
+    line-height: 1.5;
+}
+/* ============================================
+   END: Typography - Global Heading Class
+   ============================================ */
+
 /* Override Bootstrap container max-width to match original */
 .container {
-    max-width: 1200px;
+    max-width: 1640px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -95,13 +130,14 @@ ul {
 
 .header__nav-list {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     margin: 0;
     padding: 0;
 }
 
 .header__nav-link {
     color: var(--primary-yellow);
+    font-size: 20px;
 }
 
 .header__nav-link:hover {
@@ -115,6 +151,7 @@ ul {
 .header__logo {
     font-weight: 700;
     letter-spacing: 2px;
+    font-size: 30px;
 }
 /* ============================================
    END: Header (Global Component)
@@ -164,7 +201,7 @@ ul {
 }
 
 .hero__headline {
-    font-size: 3.5rem;
+    font-size: 90px;
     font-weight: 600;
     line-height: 1.1;
 }
@@ -198,7 +235,7 @@ ul {
 }
 
 .footer__heading {
-    font-size: 1.5rem;
+    font-size: 62px;
     margin-bottom: 20px;
     font-weight: 400;
 }
@@ -208,7 +245,7 @@ ul {
 }
 
 .footer__logo {
-    width: 300px;
+    width: 350px;
     height: 200px;
     background-image: url('../images/Yani-Logo-Rev.png');
     background-size: contain;
@@ -232,18 +269,16 @@ ul {
 
 .footer__contact-icon img,
 .footer__icon-img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 
 .footer__contact-name {
-    font-size: 1.7rem;
     margin-bottom: 5px;
     color: #ccc;
 }
 
 .footer__contact-info {
-    font-size: 0.85rem;
     margin-bottom: 5px;
 }
 
@@ -268,10 +303,10 @@ ul {
 }
 
 .footer__acknowledgement-text {
-    font-size: 1.5rem;
+    font-size: 35px;
     color: var(--primary-yellow);
     margin: 0;
-    line-height: 1.6;
+    line-height: 1.2;
 }
 
 .footer__badges {
@@ -287,12 +322,11 @@ ul {
 }
 
 .footer__badge-image {
-    max-width: 120px;
+    max-width: 150px;
     height: auto;
 }
 
 .footer__badge-text {
-    font-size: 0.9rem;
     color: var(--text-white);
     margin: 0;
     white-space: nowrap;
@@ -302,7 +336,7 @@ ul {
     text-align: center;
     padding: 20px 0;
     margin-top: 10px;
-    font-size: 0.85rem;
+    font-size: 20px;
     color: var(--text-dark-gray);
 }
 

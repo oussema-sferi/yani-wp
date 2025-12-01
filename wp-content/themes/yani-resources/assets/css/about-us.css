@@ -16,9 +16,7 @@
     --bs-gutter-y: 0;
 }
 
-.intro__text {
-    font-size: 0.95rem;
-}
+/* .intro__text font size now handled by text-large class */
 /* ============================================
    END: Intro Section
    ============================================ */
@@ -33,15 +31,12 @@
 }
 
 .leadership-team__title {
-    font-size: 62px;
-    font-weight: 700;
     color: var(--text-black);
     margin: 0;
-    line-height: 1.2;
 }
 
 .leadership-team__logo {
-    max-width: 150px;
+    max-width: 285px;
     height: auto;
 }
 
@@ -57,7 +52,7 @@
 
 .leadership-team__image {
     width: 75%;
-    height: 400px;
+    min-height: 550px;
     object-fit: cover;
     object-position: center;
     display: block;
@@ -78,7 +73,6 @@
 }
 
 .leadership-team__bio {
-    font-size: 0.95rem;
     color: var(--text-black);
     line-height: 1.6;
     margin-bottom: 25px;
@@ -91,7 +85,6 @@
 }
 
 .leadership-team__quote-text {
-    font-size: 1rem;
     color: var(--primary-red);
     font-style: italic;
     margin-bottom: 8px;
@@ -137,7 +130,7 @@
 .our-values__overlay-title {
     position: absolute;
     top: 40px;
-    left: 40px;
+    left: 150px;
     font-size: 3.5rem;
     font-weight: 700;
     color: var(--text-white);
@@ -193,14 +186,11 @@
 }
 
 .our-values__item-title {
-    font-size: 1.2rem;
-    font-weight: 600;
     color: var(--text-black);
     margin-bottom: 8px;
 }
 
 .our-values__item-description {
-    font-size: 0.95rem;
     color: var(--text-black);
     line-height: 1.5;
     margin: 0;
@@ -219,11 +209,8 @@
 }
 
 .industries__title {
-    font-size: 2.5rem;
-    font-weight: 700;
     color: var(--text-black);
     margin: 0;
-    line-height: 1.2;
 }
 
 .industries__list {
@@ -257,7 +244,6 @@
 }
 
 .industries__text {
-    font-size: 1.1rem;
     font-weight: 400;
     color: var(--text-black);
 }

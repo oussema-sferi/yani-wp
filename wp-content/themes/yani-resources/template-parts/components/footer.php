@@ -10,7 +10,7 @@
         <div class="row align-items-center g-4">
             <div class="col-md-4 footer__column">
                 <h4 class="footer__heading">Contact</h4>
-                <p class="footer__text">Follow Us</p>
+                <p class="footer__text text-medium">Follow Us</p>
                 <div class="footer__social">in</div>
             </div>
             <div class="col-md-4 footer__column footer__column--center">
@@ -25,26 +25,26 @@
                 <div class="footer__contact-icon">
                     <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/phone-white.svg' ); ?>" alt="Phone Icon" class="footer__icon-img">
                 </div>
-                <h5 class="footer__contact-name">Nathan Wilson</h5>
-                <p class="footer__contact-info">nathan@yaniresources.com.au</p>
-                <p class="footer__contact-info">0404 653 168</p>
+                <h5 class="footer__contact-name heading-secondary">Nathan Wilson</h5>
+                <p class="footer__contact-info text-medium">nathan@yaniresources.com.au</p>
+                <p class="footer__contact-info text-medium">0404 653 168</p>
             </div>
             <div class="col-md-4 footer__contact">
                 <div class="footer__contact-icon">
                     <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/phone-white.svg' ); ?>" alt="Phone Icon" class="footer__icon-img">
                 </div>
-                <h5 class="footer__contact-name">Cam Gibson</h5>
-                <p class="footer__contact-info">cam@yaniresources.com.au</p>
-                <p class="footer__contact-info">0400 040 950</p>
+                <h5 class="footer__contact-name heading-secondary">Cam Gibson</h5>
+                <p class="footer__contact-info text-medium">cam@yaniresources.com.au</p>
+                <p class="footer__contact-info text-medium">0400 040 950</p>
             </div>
             <div class="col-md-4 footer__contact">
                 <div class="footer__contact-icon">
                     <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mail-white.svg' ); ?>" alt="Phone Icon" class="footer__icon-img">
                 </div>
-                <h5 class="footer__contact-name">Address</h5>
-                <p class="footer__contact-info">Unit 2/1 Dampier Road, Welshpool WA 6106</p>
-                <p class="footer__contact-info">ABN: 54 653 450 012 | ACN 653 450 012</p>
-                <p class="footer__contact-info">EC16722</p>
+                <h5 class="footer__contact-name heading-secondary">Address</h5>
+                <p class="footer__contact-info text-medium">Unit 2/1 Dampier Road, Welshpool WA 6106</p>
+                <p class="footer__contact-info text-medium">ABN: 54 653 450 012 | ACN 653 450 012</p>
+                <p class="footer__contact-info text-medium">EC16722</p>
             </div>
         </div>
     </div>
@@ -57,7 +57,7 @@
             <div class="col-md-3 footer__badges">
                 <div class="footer__badges-wrapper">
                     <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/sn.png' ); ?>" alt="Supply Nation" class="footer__badge-image">
-                    <p class="footer__badge-text">Proudly<br> Indigenous<br> Owned</p>
+                    <p class="footer__badge-text text-medium">Proudly<br> Indigenous<br> Owned</p>
                 </div>
             </div>
         </div>

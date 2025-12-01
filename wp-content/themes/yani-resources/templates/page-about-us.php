@@ -28,10 +28,10 @@ yani_render_hero(
     <div class="container intro__container">
         <div class="row g-5">
             <div class="col-md-6 intro__text">
-                <p><?php echo esc_html( get_field( 'about_intro_text_1', $page_id ) ?: 'Welcome to Yani Resources. Delivering specialised electrical and labour hire services, we are powered by integrity, community, and skilled delivery.' ); ?></p>
+                <p class="text-large"><?php echo esc_html( get_field( 'about_intro_text_1', $page_id ) ?: 'Welcome to Yani Resources. Delivering specialised electrical and labour hire services, we are powered by integrity, community, and skilled delivery.' ); ?></p>
             </div>
             <div class="col-md-6 intro__text">
-                <p><?php echo esc_html( get_field( 'about_intro_text_2', $page_id ) ?: 'Proudly Aboriginal-owned, we provide high-quality services across construction, mining, government and infrastructure sectors, combining industry expertise with cultural respect.' ); ?></p>
+                <p class="text-large"><?php echo esc_html( get_field( 'about_intro_text_2', $page_id ) ?: 'Proudly Aboriginal-owned, we provide high-quality services across construction, mining, government and infrastructure sectors, combining industry expertise with cultural respect.' ); ?></p>
             </div>
         </div>
     </div>
@@ -42,10 +42,10 @@ yani_render_hero(
     <div class="container">
         <div class="row align-items-center mb-5">
             <div class="col-md-8">
-                <h2 class="leadership-team__title"><?php echo esc_html( get_field( 'about_leadership_title', $page_id ) ?: 'Yani Resources Leadership Team' ); ?></h2>
+                <h2 class="leadership-team__title heading-primary"><?php echo wp_kses_post( get_field( 'about_leadership_title', $page_id ) ?: 'Yani Resources Leadership Team' ); ?></h2>
             </div>
             <div class="col-md-4 text-end">
-                <!--<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/Yani-Logo-Pos.png' ); ?>" alt="Yani Resources Logo" class="leadership-team__logo">-->
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/logo-icon.png' ); ?>" alt="Yani Resources Logo" class="leadership-team__logo">
             </div>
         </div>
         <div class="row g-5">
@@ -70,8 +70,8 @@ yani_render_hero(
                     </div>
                     <h3 class="leadership-team__name"><?php echo esc_html( $left_name ); ?></h3>
                     <p class="leadership-team__job-title"><?php echo esc_html( $left_title ); ?></p>
-                    <p class="leadership-team__bio"><?php echo esc_html( $left_description ); ?></p>
-                    <blockquote class="leadership-team__quote">
+                    <p class="leadership-team__bio text-large"><?php echo esc_html( $left_description ); ?></p>
+                    <blockquote class="leadership-team__quote text-large">
                         <p class="leadership-team__quote-text">"<?php echo esc_html( $left_quote ); ?>"</p>
                         <cite class="leadership-team__quote-author"><?php echo esc_html( $left_quote_author ); ?></cite>
                     </blockquote>
@@ -98,8 +98,8 @@ yani_render_hero(
                     </div>
                     <h3 class="leadership-team__name"><?php echo esc_html( $right_name ); ?></h3>
                     <p class="leadership-team__job-title"><?php echo esc_html( $right_title ); ?></p>
-                    <p class="leadership-team__bio"><?php echo esc_html( $right_description ); ?></p>
-                    <blockquote class="leadership-team__quote">
+                    <p class="leadership-team__bio text-large"><?php echo esc_html( $right_description ); ?></p>
+                    <blockquote class="leadership-team__quote text-large">
                         <p class="leadership-team__quote-text">"<?php echo esc_html( $right_quote ); ?>"</p>
                         <cite class="leadership-team__quote-author"><?php echo esc_html( $right_quote_author ); ?></cite>
                     </blockquote>
@@ -125,7 +125,7 @@ yani_render_hero(
                         echo '<img src="' . esc_url( get_template_directory_uri() . '/assets/images/Yani-3.jpeg' ) . '" alt="Our Team" class="our-values__image">';
                     }
                     ?>
-                    <!-- <h2 class="our-values__overlay-title">Our Values</h2> -->
+                    <h2 class="our-values__overlay-title">Our Values</h2>
                 </div>
             </div>
             <!-- Right Side: Values List -->
@@ -165,8 +165,8 @@ yani_render_hero(
                                     <img src="<?php echo esc_url( $icon ); ?>" alt="<?php echo esc_attr( $title ); ?> Icon">
                                 </div>
                                 <div class="our-values__content">
-                                    <h3 class="our-values__item-title"><?php echo esc_html( $title ); ?></h3>
-                                    <p class="our-values__item-description"><?php echo esc_html( $description ); ?></p>
+                                    <h3 class="our-values__item-title heading-tertiary"><?php echo esc_html( $title ); ?></h3>
+                                    <p class="our-values__item-description text-medium"><?php echo esc_html( $description ); ?></p>
                                 </div>
                             </div>
                         </div>
@@ -187,7 +187,7 @@ yani_render_hero(
                 $industries_left = get_field( 'about_industries_left', $page_id );
                 $industries_title = ! empty( $industries_left['title'] ) ? $industries_left['title'] : 'Industries We<br>Support';
                 ?>
-                <h2 class="industries__title"><?php echo wp_kses_post( nl2br( $industries_title ) ); ?></h2>
+                <h2 class="industries__title heading-primary"><?php echo wp_kses_post( nl2br( $industries_title ) ); ?></h2>
             </div>
             <div class="col-md-6">
                 <?php
@@ -220,7 +220,7 @@ yani_render_hero(
                             <div class="industries__icon">
                                 <img src="<?php echo esc_url( $icon ); ?>" alt="<?php echo esc_attr( $title ); ?> Icon">
                             </div>
-                            <span class="industries__text"><?php echo esc_html( $title ); ?></span>
+                            <span class="industries__text text-large"><?php echo esc_html( $title ); ?></span>
                         </li>
                     <?php endforeach; ?>
                 </ul>

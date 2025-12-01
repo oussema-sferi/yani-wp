@@ -28,10 +28,10 @@ yani_render_hero(
     <div class="container intro__container">
         <div class="row g-5">
             <div class="col-md-6 intro__text">
-                <p><?php echo esc_html( get_field( 'home_intro_text_1', $page_id ) ?: 'Welcome to Yani Resources. Delivering specialised electrical and labour hire services, we are powered by integrity, community, and skilled delivery.' ); ?></p>
+                <p class="text-large"><?php echo esc_html( get_field( 'home_intro_text_1', $page_id ) ?: 'Welcome to Yani Resources. Delivering specialised electrical and labour hire services, we are powered by integrity, community, and skilled delivery.' ); ?></p>
             </div>
             <div class="col-md-6 intro__text">
-                <p><?php echo esc_html( get_field( 'home_intro_text_2', $page_id ) ?: 'Proudly Aboriginal-owned, we provide high-quality services across construction, mining, government and infrastructure sectors, combining industry expertise with cultural respect.' ); ?></p>
+                <p class="text-large"><?php echo esc_html( get_field( 'home_intro_text_2', $page_id ) ?: 'Proudly Aboriginal-owned, we provide high-quality services across construction, mining, government and infrastructure sectors, combining industry expertise with cultural respect.' ); ?></p>
             </div>
         </div>
     </div>
@@ -40,18 +40,18 @@ yani_render_hero(
 <!-- Services Section -->
 <section class="services">
     <div class="container">
-        <h2 class="services__title"><?php echo esc_html( get_field( 'home_services_title', $page_id ) ?: 'Our Core Services' ); ?></h2>
+        <h2 class="services__title heading-primary"><?php echo esc_html( get_field( 'home_services_title', $page_id ) ?: 'Our Core Services' ); ?></h2>
         <div class="row services__grid g-5">
             <div class="col-md-6 services__card">
                 <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/Electrician.svg' ); ?>" alt="Electrical Icon" class="services__icon">
-                <h3 class="services__card-title"><?php echo esc_html( get_field( 'home_services_left_subtitle', $page_id ) ?: 'Electrical & Instrumentation' ); ?></h3>
-                <p class="services__card-description"><?php echo esc_html( get_field( 'home_services_left_text', $page_id ) ?: 'Electrical contracting across installations, maintenance and commissioning. EC16722.' ); ?></p>
+                <h3 class="services__card-title heading-secondary"><?php echo esc_html( get_field( 'home_services_left_subtitle', $page_id ) ?: 'Electrical & Instrumentation' ); ?></h3>
+                <p class="services__card-description text-medium"><?php echo esc_html( get_field( 'home_services_left_text', $page_id ) ?: 'Electrical contracting across installations, maintenance and commissioning. EC16722.' ); ?></p>
                 <a href="#" class="btn btn--outline">Learn More</a>
             </div>
             <div class="col-md-6 services__card">
                 <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/Labour.svg' ); ?>" alt="Labour Icon" class="services__icon">
-                <h3 class="services__card-title"><?php echo esc_html( get_field( 'home_services_right_subtitle', $page_id ) ?: 'Labour Hire & Talent Deployment' ); ?></h3>
-                <p class="services__card-description"><?php echo esc_html( get_field( 'home_services_right_text', $page_id ) ?: 'Skilled, site-ready personnel supporting construction, mining and industrial operations.' ); ?></p>
+                <h3 class="services__card-title heading-secondary"><?php echo esc_html( get_field( 'home_services_right_subtitle', $page_id ) ?: 'Labour Hire & Talent Deployment' ); ?></h3>
+                <p class="services__card-description text-medium"><?php echo esc_html( get_field( 'home_services_right_text', $page_id ) ?: 'Skilled, site-ready personnel supporting construction, mining and industrial operations.' ); ?></p>
                 <a href="#" class="btn btn--outline">Learn More</a>
             </div>
         </div>
@@ -77,9 +77,9 @@ yani_render_hero(
     <div class="container about__container">
         <div class="row g-5">
             <div class="col-md-6 about__quote">
-                <h2 class="about__quote-text"><?php echo get_field( 'home_about_quote', $page_id ) ?: '"Yani" is a Noongar word meaning peace.<br>It reflects our mission, to create stronger communities through connection, opportunity and support.'; ?></h2>
+                <h2 class="about__quote-text heading-primary"><?php echo get_field( 'home_about_quote', $page_id ) ?: '"Yani" is a Noongar word meaning peace.<br>It reflects our mission, to create stronger communities through connection, opportunity and support.'; ?></h2>
             </div>
-            <div class="col-md-6 about__content">
+            <div class="col-md-6 about__content text-large">
                 <p class="about__content-intro"><?php echo esc_html( get_field( 'home_about_intro', $page_id ) ?: 'We\'re committed to building partnerships that deliver on scope, safety and social value. Here\'s why clients choose Yani Resources:' ); ?></p>
                 <ul class="about__content-list">
                     <?php
@@ -113,12 +113,12 @@ yani_render_hero(
     <div class="container mission-vision__container">
         <div class="row g-5">
             <div class="col-md-6 mission-vision__item">
-                <h3 class="mission-vision__title"><?php echo esc_html( get_field( 'home_mission_title', $page_id ) ?: 'Our Mission' ); ?></h3>
-                <p class="mission-vision__text"><?php echo esc_html( get_field( 'home_mission', $page_id ) ?: 'To deliver exceptional services while creating long-term employment pathways and cultural empowerment.' ); ?></p>
+                <h3 class="mission-vision__title heading-primary"><?php echo esc_html( get_field( 'home_mission_title', $page_id ) ?: 'Our Mission' ); ?></h3>
+                <p class="mission-vision__text text-medium"><?php echo esc_html( get_field( 'home_mission', $page_id ) ?: 'To deliver exceptional services while creating long-term employment pathways and cultural empowerment.' ); ?></p>
             </div>
             <div class="col-md-6 mission-vision__item">
-                <h3 class="mission-vision__title"><?php echo esc_html( get_field( 'home_vision_title', $page_id ) ?: 'Our Vision' ); ?></h3>
-                <p class="mission-vision__text"><?php echo esc_html( get_field( 'home_vision', $page_id ) ?: 'A future where commercial success and community strength go hand in hand.' ); ?></p>
+                <h3 class="mission-vision__title heading-primary"><?php echo esc_html( get_field( 'home_vision_title', $page_id ) ?: 'Our Vision' ); ?></h3>
+                <p class="mission-vision__text text-medium"><?php echo esc_html( get_field( 'home_vision', $page_id ) ?: 'A future where commercial success and community strength go hand in hand.' ); ?></p>
             </div>
         </div>
     </div>
