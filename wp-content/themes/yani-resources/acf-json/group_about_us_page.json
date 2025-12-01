@@ -350,6 +350,158 @@
                     ]
                 }
             ]
+        },
+        {
+            "key": "field_tab_about_industries",
+            "label": "Industries Section",
+            "name": "",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_group_industries_left",
+            "label": "Left Section (Title)",
+            "name": "about_industries_left",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_about_industries_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "default_value": "Industries We\nSupport"
+                }
+            ]
+        },
+        {
+            "key": "field_group_industries_right",
+            "label": "Right Section (Industries List)",
+            "name": "about_industries_right",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_about_industry_1",
+                    "label": "Industry 1",
+                    "name": "industry_1",
+                    "type": "group",
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_about_industry_1_icon",
+                            "label": "Icon",
+                            "name": "icon",
+                            "type": "image",
+                            "return_format": "url",
+                            "preview_size": "thumbnail"
+                        },
+                        {
+                            "key": "field_about_industry_1_title",
+                            "label": "Title",
+                            "name": "title",
+                            "type": "text",
+                            "default_value": "Mining & Resources"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_about_industry_2",
+                    "label": "Industry 2",
+                    "name": "industry_2",
+                    "type": "group",
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_about_industry_2_icon",
+                            "label": "Icon",
+                            "name": "icon",
+                            "type": "image",
+                            "return_format": "url",
+                            "preview_size": "thumbnail"
+                        },
+                        {
+                            "key": "field_about_industry_2_title",
+                            "label": "Title",
+                            "name": "title",
+                            "type": "text",
+                            "default_value": "Local, State & Federal Government"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_about_industry_3",
+                    "label": "Industry 3",
+                    "name": "industry_3",
+                    "type": "group",
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_about_industry_3_icon",
+                            "label": "Icon",
+                            "name": "icon",
+                            "type": "image",
+                            "return_format": "url",
+                            "preview_size": "thumbnail"
+                        },
+                        {
+                            "key": "field_about_industry_3_title",
+                            "label": "Title",
+                            "name": "title",
+                            "type": "text",
+                            "default_value": "Defence Industry"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_about_industry_4",
+                    "label": "Industry 4",
+                    "name": "industry_4",
+                    "type": "group",
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_about_industry_4_icon",
+                            "label": "Icon",
+                            "name": "icon",
+                            "type": "image",
+                            "return_format": "url",
+                            "preview_size": "thumbnail"
+                        },
+                        {
+                            "key": "field_about_industry_4_title",
+                            "label": "Title",
+                            "name": "title",
+                            "type": "text",
+                            "default_value": "Strata & Commercial Property"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_about_industry_5",
+                    "label": "Industry 5",
+                    "name": "industry_5",
+                    "type": "group",
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_about_industry_5_icon",
+                            "label": "Icon",
+                            "name": "icon",
+                            "type": "image",
+                            "return_format": "url",
+                            "preview_size": "thumbnail"
+                        },
+                        {
+                            "key": "field_about_industry_5_title",
+                            "label": "Title",
+                            "name": "title",
+                            "type": "text",
+                            "default_value": "Industrial & Infrastructure Projects"
+                        }
+                    ]
+                }
+            ]
         }
     ],
     "location": [

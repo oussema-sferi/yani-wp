@@ -153,17 +153,18 @@ get_template_part( 'template-parts/components/hero' );
                     
                     // Default values if empty
                     $default_values = array(
-                        array( 'title' => 'Community Empowerment', 'description' => 'Building opportunities that last' ),
-                        array( 'title' => 'Honesty & Reliability', 'description' => 'Doing what we say, every time' ),
-                        array( 'title' => 'Safety & Wellbeing', 'description' => 'Always standing strong together' ),
-                        array( 'title' => 'Mateship & Teamwork', 'description' => 'Empowering projects, people and careers' ),
-                        array( 'title' => 'Growth & Development', 'description' => 'Empowering projects, people and careers' ),
+                        array( 'title' => 'Community Empowerment', 'description' => 'Building opportunities that last', 'icon' => 'Community.svg' ),
+                        array( 'title' => 'Honesty & Reliability', 'description' => 'Doing what we say, every time', 'icon' => 'Reliable.svg' ),
+                        array( 'title' => 'Safety & Wellbeing', 'description' => 'Always standing strong together', 'icon' => 'Safety.svg' ),
+                        array( 'title' => 'Mateship & Teamwork', 'description' => 'Empowering projects, people and careers', 'icon' => 'Mateship.svg' ),
+                        array( 'title' => 'Growth & Development', 'description' => 'Empowering projects, people and careers', 'icon' => 'Growth.svg' ),
                     );
                     
                     foreach ( $values as $index => $value ) :
-                        $icon = $value['icon'] ?? get_template_directory_uri() . '/assets/images/Electrician.svg';
-                        $title = $value['title'] ?? $default_values[$index]['title'] ?? '';
-                        $description = $value['description'] ?? $default_values[$index]['description'] ?? '';
+                        // Use default icon if ACF icon is empty or not set
+                        $icon = ! empty( $value['icon'] ) ? $value['icon'] : get_template_directory_uri() . '/assets/images/' . $default_values[$index]['icon'];
+                        $title = ! empty( $value['title'] ) ? $value['title'] : $default_values[$index]['title'];
+                        $description = ! empty( $value['description'] ) ? $value['description'] : $default_values[$index]['description'];
                     ?>
                         <div class="col-md-6">
                             <div class="our-values__item">
@@ -189,40 +190,46 @@ get_template_part( 'template-parts/components/hero' );
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h2 class="industries__title">Industries We<br>Support</h2>
+                <?php
+                $industries_left = get_field( 'about_industries_left', $page_id );
+                $industries_title = ! empty( $industries_left['title'] ) ? $industries_left['title'] : 'Industries We<br>Support';
+                ?>
+                <h2 class="industries__title"><?php echo wp_kses_post( nl2br( $industries_title ) ); ?></h2>
             </div>
             <div class="col-md-6">
+                <?php
+                $industries_right = get_field( 'about_industries_right', $page_id );
+                
+                // Get all 5 industries
+                $industries = array(
+                    $industries_right['industry_1'] ?? array(),
+                    $industries_right['industry_2'] ?? array(),
+                    $industries_right['industry_3'] ?? array(),
+                    $industries_right['industry_4'] ?? array(),
+                    $industries_right['industry_5'] ?? array(),
+                );
+                
+                // Default industries with icons
+                $default_industries = array(
+                    array( 'title' => 'Mining & Resources', 'icon' => 'Mining.svg' ),
+                    array( 'title' => 'Local, State & Federal Government', 'icon' => 'Government.svg' ),
+                    array( 'title' => 'Defence Industry', 'icon' => 'Defence.svg' ),
+                    array( 'title' => 'Strata & Commercial Property', 'icon' => 'Property.svg' ),
+                    array( 'title' => 'Industrial & Infrastructure Projects', 'icon' => 'Industry.svg' ),
+                );
+                ?>
                 <ul class="industries__list">
-                    <li class="industries__item">
-                        <div class="industries__icon">
-                            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/Electrician.svg' ); ?>" alt="Mining & Resources Icon">
-                        </div>
-                        <span class="industries__text">Mining & Resources</span>
-                    </li>
-                    <li class="industries__item">
-                        <div class="industries__icon">
-                            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/Electrician.svg' ); ?>" alt="Government Icon">
-                        </div>
-                        <span class="industries__text">Local, State & Federal Government</span>
-                    </li>
-                    <li class="industries__item">
-                        <div class="industries__icon">
-                            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/Electrician.svg' ); ?>" alt="Defence Industry Icon">
-                        </div>
-                        <span class="industries__text">Defence Industry</span>
-                    </li>
-                    <li class="industries__item">
-                        <div class="industries__icon">
-                            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/Electrician.svg' ); ?>" alt="Property Icon">
-                        </div>
-                        <span class="industries__text">Strata & Commercial Property</span>
-                    </li>
-                    <li class="industries__item">
-                        <div class="industries__icon">
-                            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/Electrician.svg' ); ?>" alt="Industrial Icon">
-                        </div>
-                        <span class="industries__text">Industrial & Infrastructure Projects</span>
-                    </li>
+                    <?php foreach ( $industries as $index => $industry ) :
+                        $icon = ! empty( $industry['icon'] ) ? $industry['icon'] : get_template_directory_uri() . '/assets/images/' . $default_industries[$index]['icon'];
+                        $title = ! empty( $industry['title'] ) ? $industry['title'] : $default_industries[$index]['title'];
+                    ?>
+                        <li class="industries__item">
+                            <div class="industries__icon">
+                                <img src="<?php echo esc_url( $icon ); ?>" alt="<?php echo esc_attr( $title ); ?> Icon">
+                            </div>
+                            <span class="industries__text"><?php echo esc_html( $title ); ?></span>
+                        </li>
+                    <?php endforeach; ?>
                 </ul>
             </div>
         </div>
