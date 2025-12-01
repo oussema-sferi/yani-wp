@@ -185,7 +185,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "page-home.php"
+                "value": "templates/page-home.php"
             }
         ],
         [

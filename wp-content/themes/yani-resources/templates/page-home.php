@@ -10,7 +10,7 @@
 get_header();
 
 // Enqueue page-specific CSS
-wp_enqueue_style( 'yani-home', get_template_directory_uri() . '/css/home.css', array( 'yani-global' ), '1.0.0' );
+wp_enqueue_style( 'yani-home', get_template_directory_uri() . '/assets/css/home.css', array( 'yani-global' ), '1.0.0' );
 
 // Get current page ID for ACF fields
 $page_id = get_the_ID();
@@ -27,7 +27,7 @@ if ( ! $hero_headline ) {
 // Pass variables to template part
 set_query_var( 'hero_image', $hero_image );
 set_query_var( 'hero_headline', $hero_headline );
-get_template_part( 'template-parts/hero' );
+get_template_part( 'template-parts/components/hero' );
 ?>
 
 <!-- Intro Bar -->
@@ -73,7 +73,7 @@ get_template_part( 'template-parts/hero' );
                 <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/Yani-Logo-Pos.png' ); ?>" alt="Yani Resources Logo" class="logos__image logos__image--yani">
             </div>
             <div class="col-md-6 logos__item text-center">
-                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/Supply-Nation-Registered.png' ); ?>" alt="Supply Nation Registered" class="logos__image logos__image--supply-nation">
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/sn.png' ); ?>" alt="Supply Nation Registered" class="logos__image logos__image--supply-nation">
             </div>
         </div>
     </div>

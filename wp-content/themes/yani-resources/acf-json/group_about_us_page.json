@@ -357,7 +357,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "page-about-us.php"
+                "value": "templates/page-about-us.php"
             }
         ]
     ],

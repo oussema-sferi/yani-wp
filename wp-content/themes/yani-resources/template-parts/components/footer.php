@@ -56,8 +56,8 @@
             </div>
             <div class="col-md-3 footer__badges">
                 <div class="footer__badges-wrapper">
-                    <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/Supply-Nation-Registered.png' ); ?>" alt="Supply Nation" class="footer__badge-image">
-                    <p class="footer__badge-text">Proudly Indigenous Owned</p>
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/sn.png' ); ?>" alt="Supply Nation" class="footer__badge-image">
+                    <p class="footer__badge-text">Proudly<br> Indigenous<br> Owned</p>
                 </div>
             </div>
         </div>
