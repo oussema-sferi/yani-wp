@@ -130,7 +130,7 @@ ul {
     background-position: center;
     color: var(--text-white);
     padding: 40px 0;
-    min-height: 600px;
+    min-height: 900px;
     position: relative;
 }
 
@@ -150,12 +150,12 @@ ul {
 }
 
 .hero__logo {
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 }
 
 .hero__logo-image {
-    width: 350px;
-    height: 150px;
+    width: 375px;
+    height: 250px;
     background-image: url('../images/Yani-Logo-Rev.png');
     background-size: contain;
     background-repeat: no-repeat;
