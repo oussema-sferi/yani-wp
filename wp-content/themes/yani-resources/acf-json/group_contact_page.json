@@ -1,0 +1,60 @@
+{
+    "key": "group_contact_page",
+    "title": "Contact Page Content",
+    "fields": [
+        {
+            "key": "field_tab_contact_hero",
+            "label": "Hero Section",
+            "name": "",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_contact_hero_image",
+            "label": "Hero Image",
+            "name": "contact_hero_image",
+            "type": "image",
+            "return_format": "url",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_contact_hero_headline",
+            "label": "Hero Headline",
+            "name": "contact_hero_headline",
+            "type": "text",
+            "default_value": "Contact Us"
+        },
+        {
+            "key": "field_tab_contact_cta",
+            "label": "CTA Section",
+            "name": "",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_contact_cta_text",
+            "label": "CTA Text",
+            "name": "contact_cta_text",
+            "type": "wysiwyg",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "default_value": "<p>Let's work together to optimise productivity<br>and empower community.</p>"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates/page-contact.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "hide_on_screen": ""
+}
+

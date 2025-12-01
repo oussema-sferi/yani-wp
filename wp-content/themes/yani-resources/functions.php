@@ -19,6 +19,7 @@ function yani_resources_add_page_templates( $templates ) {
     $templates['templates/page-about-us.php'] = 'About Us';
     $templates['templates/page-services.php'] = 'Services';
     $templates['templates/page-indigenous-participation.php'] = 'Indigenous Participation';
+    $templates['templates/page-contact.php'] = 'Contact';
     return $templates;
 }
 add_filter( 'theme_page_templates', 'yani_resources_add_page_templates' );
