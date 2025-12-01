@@ -26,7 +26,7 @@
         },
         {
             "key": "field_tab_services_content",
-            "label": "Services Content Section",
+            "label": "Electrical & Instrumentation Section",
             "name": "",
             "type": "tab",
             "placement": "top"
@@ -59,6 +59,38 @@
             "key": "field_services_image",
             "label": "Right Side Image",
             "name": "services_image",
+            "type": "image",
+            "return_format": "url",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_tab_services_section_2",
+            "label": "Labour Hire Section",
+            "name": "",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_services_section_2_title",
+            "label": "Section Title",
+            "name": "services_section_2_title",
+            "type": "text",
+            "default_value": "Labour Hire -<br>Talent Deployment<br>Services"
+        },
+        {
+            "key": "field_services_section_2_content",
+            "label": "Content",
+            "name": "services_section_2_content",
+            "type": "wysiwyg",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "default_value": "<p>Yani Resources provides skilled and dependable labour hire solutions to support construction, mining, infrastructure and government projects. Our workforce is fully vetted, site-ready and adaptable, ensuring seamless integration with client teams while supporting Indigenous employment pathways. We focus on reliability productivity and long-term capability on every site.</p>\n\n<ul>\n<li>General site labour &amp; maintenance support</li>\n<li>Trades Assistants across multiple disciplines</li>\n<li>Landscaping and Scaffolding</li>\n<li>Materials handling, packing and logistics</li>\n<li>Machinery and equipment operation</li>\n<li>Tool store, yard and workshop support roles</li>\n</ul>\n\n<p>Providing safety-focused workers aligned to site protocols, we deliver workforce stability while creating Indigenous employment and training pathways.</p>"
+        },
+        {
+            "key": "field_services_section_2_image",
+            "label": "Left Side Image",
+            "name": "services_section_2_image",
             "type": "image",
             "return_format": "url",
             "preview_size": "medium"

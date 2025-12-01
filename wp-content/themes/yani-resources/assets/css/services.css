@@ -6,6 +6,10 @@
     padding: 60px 0;
 }
 
+.services-page--reversed {
+    background-color: var(--text-white);
+}
+
 .services-page .container {
     max-width: 1200px;
 }
@@ -19,6 +23,11 @@
 .services-page .col-md-6 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+.services-page__content-wrapper {
+    width: 100%;
 }
 
 .services-page__license {
