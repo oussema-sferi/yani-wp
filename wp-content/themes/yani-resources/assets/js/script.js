@@ -1,4 +1,4 @@
-// Initialize hamburger menu
+// Initialize hamburger menu on mobile
 document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.querySelector('.header__hamburger');
     const siteNav = document.querySelector('.header__nav');
