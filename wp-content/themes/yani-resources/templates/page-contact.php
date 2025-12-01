@@ -15,19 +15,12 @@ wp_enqueue_style( 'yani-contact', get_template_directory_uri() . '/assets/css/co
 // Get current page ID for ACF fields
 $page_id = get_the_ID();
 
-// Hero Section - Get ACF fields with fallbacks
-$hero_image = get_field( 'contact_hero_image', $page_id );
-if ( ! $hero_image ) {
-    $hero_image = get_template_directory_uri() . '/assets/images/home-hero.jpg';
-}
-$hero_headline = get_field( 'contact_hero_headline', $page_id );
-if ( ! $hero_headline ) {
-    $hero_headline = 'Contact Us';
-}
-// Pass variables to template part
-set_query_var( 'hero_image', $hero_image );
-set_query_var( 'hero_headline', $hero_headline );
-get_template_part( 'template-parts/components/hero' );
+// Hero Section
+yani_render_hero(
+    $page_id,
+    'contact_',
+    get_template_directory_uri() . '/assets/images/home-hero.jpg'
+);
 ?>
 
 <!-- CTA Section -->

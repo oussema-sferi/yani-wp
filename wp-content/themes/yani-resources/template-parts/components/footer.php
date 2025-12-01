@@ -39,7 +39,7 @@
             </div>
             <div class="col-md-4 footer__contact">
                 <div class="footer__contact-icon">
-                    <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/phone-white.svg' ); ?>" alt="Phone Icon" class="footer__icon-img">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mail-white.svg' ); ?>" alt="Phone Icon" class="footer__icon-img">
                 </div>
                 <h5 class="footer__contact-name">Address</h5>
                 <p class="footer__contact-info">Unit 2/1 Dampier Road, Welshpool WA 6106</p>
