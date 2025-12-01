@@ -23,3 +23,129 @@
    END: Intro Section
    ============================================ */
 
+
+/* ============================================
+   START: Partnering Section
+   ============================================ */
+.indigenous-participation-page {
+    background-color: var(--text-white);
+    padding: 60px 0;
+}
+
+.indigenous-participation-page .container {
+    max-width: 1200px;
+}
+
+.indigenous-participation-page .row {
+    margin: 0;
+    display: flex;
+    align-items: stretch;
+}
+
+.indigenous-participation-page .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.indigenous-participation-page__content-wrapper {
+    width: 100%;
+}
+
+.indigenous-participation-page__title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: var(--text-black);
+    line-height: 1.2;
+}
+
+.indigenous-participation-page__subtitle {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: var(--text-black);
+    line-height: 1.2;
+}
+
+.indigenous-participation-page__content {
+    font-size: 0.95rem;
+    color: var(--text-black);
+    line-height: 1.6;
+}
+
+.indigenous-participation-page__content p {
+    margin-bottom: 20px;
+}
+
+.indigenous-participation-page__content ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    padding-left: 0;
+}
+
+/*.indigenous-participation-page__content ul li {
+    margin-bottom: 10px;
+}*/
+
+.indigenous-participation-page__content ol {
+    list-style: decimal;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    padding-left: 0;
+}
+
+.indigenous-participation-page__content ol li {
+    margin-bottom: 10px;
+    list-style-position: inside;
+}
+
+.indigenous-participation-page__content strong {
+    font-weight: 600;
+}
+
+.indigenous-participation-page__content em {
+    font-style: italic;
+}
+
+.indigenous-participation-page__image-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.indigenous-participation-page__image {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .indigenous-participation-page {
+        padding: 40px 0;
+    }
+
+    .indigenous-participation-page__title {
+        font-size: 2rem;
+    }
+
+    .indigenous-participation-page__subtitle {
+        font-size: 1.5rem;
+    }
+
+    .indigenous-participation-page__image-wrapper {
+        margin-top: 30px;
+    }
+}
+/* ============================================
+   END: Partnering Section
+   ============================================ */
+

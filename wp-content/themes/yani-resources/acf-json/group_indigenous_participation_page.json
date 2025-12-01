@@ -44,6 +44,55 @@
             "name": "indigenous_intro_text_2",
             "type": "textarea",
             "default_value": "We are focused on providing employment and traineeship pathways in culturally safe workplaces, helping Indigenous workers build sustainable careers in construction, mining and industrial services."
+        },
+        {
+            "key": "field_tab_indigenous_partnering",
+            "label": "Partnering Section",
+            "name": "",
+            "type": "tab",
+            "placement": "top"
+        },
+        {
+            "key": "field_indigenous_partnering_title",
+            "label": "Title",
+            "name": "indigenous_partnering_title",
+            "type": "text",
+            "default_value": "Partnering with Yani creates change"
+        },
+        {
+            "key": "field_indigenous_partnering_content",
+            "label": "Content (Intro & Benefits)",
+            "name": "indigenous_partnering_content",
+            "type": "wysiwyg",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "default_value": "<p>Every contract we fulfil helps create jobs, skills and confidence, driving generational change through real opportunity. Yani clients receive service excellence and enjoy the benefits of:</p>\n\n<ul>\n<li>Supporting Indigenous Procurement commitments</li>\n<li>Contributing to ESG and Social Licence goals</li>\n<li>Building local community through industry opportunity</li>\n<li>Direct access to culturally secure operational advice</li>\n<li>Fostering economic resilience amongst Aboriginal people</li>\n</ul>"
+        },
+        {
+            "key": "field_indigenous_partnering_subtitle",
+            "label": "Subtitle",
+            "name": "indigenous_partnering_subtitle",
+            "type": "text",
+            "default_value": "Who we work with"
+        },
+        {
+            "key": "field_indigenous_partnering_partners",
+            "label": "Partners List",
+            "name": "indigenous_partnering_partners",
+            "type": "wysiwyg",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "default_value": "<ul>\n<li>Bidi Facility Services</li>\n<li>AWB</li>\n<li>Curtis Electrical</li>\n<li>Government &amp; industry partners</li>\n<li>Mining &amp; Resources sector</li>\n</ul>"
+        },
+        {
+            "key": "field_indigenous_partnering_image",
+            "label": "Right Side Image",
+            "name": "indigenous_partnering_image",
+            "type": "image",
+            "return_format": "url",
+            "preview_size": "medium"
         }
     ],
     "location": [
